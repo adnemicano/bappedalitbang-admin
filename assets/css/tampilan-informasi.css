@@ -65,19 +65,29 @@ nav .nav-links li a:hover {
     padding: 0 100px;
 }
 
+.menu-icon {
+    font-size: 28px;
+    display: none;
+    cursor: pointer;
+    color: white;
+    margin-left: auto;
+}
+
 .informasi {
     display: flex;
-
+    flex-wrap: wrap;
 }
 
 .left-section,
 .right-section {
-    width: 40%;
+    width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
 }
 
 .right-section {
-    margin-top: 5rem;
-    padding-left: 3rem;
+    margin-top: 1rem;
+    padding-left: 0;
 }
 
 .section-title {
@@ -208,4 +218,55 @@ footer h5 {
 .form-content button:hover {
     background-color: #87C139;
     transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+
+    nav {
+            padding: 1rem 30px;
+            flex-wrap: wrap;
+        }
+    
+        nav .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        nav .nav-links li {
+            margin: 1rem 0;
+        }
+    
+        nav .nav-links.active {
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to right, #009345, #009345, #87C139);
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            padding: 1rem 0;
+            z-index: 1000;
+        }
+    
+        .menu-icon {
+            display: block;
+        }
+    .container {
+        padding: 0 30px;
+    }
+
+    .informasi .left-section,
+    .informasi .right-section {
+        width: 100%;
+    }
+
+    .right-section {
+        margin-top: 1rem;
+        padding-left: 0;
+    }
+
+    .form-container {
+        width: 90%;
+    }
 }
