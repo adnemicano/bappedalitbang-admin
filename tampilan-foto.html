@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/tampilanfoto.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <img src="assets/images/logo.png" alt="">
+            <div class="menu-icon" id="menu-icon">
+                <i class="ph ph-list"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="">Konten Website</a></li>
+                <li><a href="">Pengaturan</a></li>
+                <li><a href="">Logout</a></li>
+            </ul>
+        </nav>
+
+        <section class="foto container">
+            <div class="f-title">
+                <h3>Launching eLitbang</h3>
+            </div>
+            <div class="btn-container">
+                <button class="btn-image" onclick="showForm2()">Ubah</button>
+            </div>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <td class="kiri">Status</td>
+                        <td>Tidak</td>
+                    </tr>
+                    <tr>
+                        <td class="kiri">Create User</td>
+                        <td>adminPenelitian</td>
+                    </tr>
+                    <tr>
+                        <td class="kiri">Create Time</td>
+                        <td>2019-11-13 00:56:31</td>
+                    </tr>
+                    <tr>
+                        <td class="kiri">Update User</td>
+                        <td>adminBerita</td>
+                    </tr>
+                    <tr>
+                        <td class="kiri">Update Time</td>
+                        <td>2019-11-26 08:38:40</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="btn-container">
+                <button class="btn-add-image" onclick="showForm()">Tambah Gambar</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="form-container" class="form-container">
+        <div class="form-content">
+            <h3>Tambah Gambar</h3>
+            <form action="#">
+                <label for="file">File Gambar</label>
+                <input type="file" id="file" name="file">
+                <label for="description">Keterangan</label>
+                <input type="text" id="description" name="description">
+                <p>*) Gambar harus berekstensi .jpg dan ukuran maksimal 200KB</p>
+                <button type="submit" class="btn-green">Simpan</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="form-container2" class="form-container">
+        <div class="form-content">
+            <h3>Ubah Galeri Foto</h3>
+            <form action="#">
+                <label for="gallery-name">Nama Galeri</label>
+                <input type="text" id="gallery-name" name="gallery-name">
+                <button type="submit" class="btn-green">Simpan</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <h5>Copyright © 2024. Bappeda Litbang Kabupaten Empat Lawang</h5>
+    </footer>
+
+    <script src="assets/js/tampilan-foto.js"></script>
+</body>
+
+</html>
